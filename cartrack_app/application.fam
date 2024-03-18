@@ -1,0 +1,18 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="cartrack_app",  # Must be unique
+    name="App CarTrack",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="cartrack_app",
+    stack_size=2 * 1024,
+    fap_category="My_Apps",
+    
+    # Optional values
+    fap_version="0.1",
+    fap_icon="cartrack_icon.png",  # 10x10 1-bit PNG
+    fap_description="Application developed to test electrical installations in vehicles with GPS equipment.",
+    fap_author="Manuel Pereira",
+    fap_weburl="https://github.com/manuelpereira292/FAP_Flipper_Application_Package.git",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
